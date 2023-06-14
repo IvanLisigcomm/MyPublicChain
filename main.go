@@ -1,6 +1,7 @@
 package main
 
 import "MyPublicChain/BLC"
+
 func main() {
 
 	//bytes:=make([]byte,3,3)
@@ -98,12 +99,12 @@ func main() {
 
 	//CLI
 	//blockchain:=BLC.CreateBlockChainWithGenesisBlock("Genesisblock..data...")
-	cli:=BLC.CLI{}
+	cli := BLC.CLI{}
 	cli.Run()
 	//map1 :=make(map[string]int)
 
-
 }
+
 /*
 数据库中：
- */
+*/
