@@ -2335,7 +2335,7 @@ func NewBlock(txs []*Transaction, prevBlockHash [] byte, height int64) *Block {
 
 #### 4.3 更新UTXO集
 
-```
+```go
 func (utxoSet *UTXOSet) Update() {
 	/*
 	表：key：txID
@@ -2639,7 +2639,7 @@ type BlockChainIterator struct {
 
 迭代器属性有两个，DB对象以及当前Hash
 
-```
+```go
 func (bc *BlockChain) Iterator() *BlockChainIterator {
 	return &BlockChainIterator{bc.DB, bc.Tip}
 }
